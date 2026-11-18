@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Table to Excel &amp; CSV Exporter</title>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --surface: #111827;
+      --border: #283548;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --emerald: #10b981;
+    }
+    body {
+      margin: 0;
+      padding: 32px 16px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px 32px;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 24px;
+      color: #ecfdf5;
+    }
+    h2 {
+      margin-top: 24px;
+      font-size: 17px;
+      color: #6ee7b7;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.14);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #a7f3d0;
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+    p, li {
+      color: #e2e8f0;
+      font-size: 14.5px;
+    }
+    code {
+      background: #1e293b;
+      padding: 2px 6px;
+      border-radius: 5px;
+      color: #a7f3d0;
+      font-size: 13px;
+    }
+    .muted {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 28px 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="badge">100% Local Processing · Zero Network Requests</div>
+    <h1>Privacy Policy / 隐私政策</h1>
+    <p class="muted">
+      Extension: <strong>Table to Excel &amp; CSV Exporter - Unlimited Local Capture</strong><br />
+      Effective Date / 生效日期: November 18, 2026
+    </p>
+
+    <h2>English — Privacy Policy</h2>
+    <p>
+      <strong>Table to Excel &amp; CSV Exporter</strong> is built on a strict local-first architecture. All table detection, data formatting, CSV/TSV/Markdown/JSON serialization, and Excel (<code>.xlsx</code>) binary file generation happen 100% inside your browser on your local device.
+    </p>
+    <ul>
+      <li><strong>Zero Data Collection:</strong> We do not collect, store, transmit, sell, or share any personal information, browsing history, webpage contents, or exported table data.</li>
+      <li><strong>Zero External Network Requests:</strong> The extension makes no background <code>fetch</code>, <code>XMLHttpRequest</code>, WebSocket, or remote API calls. It works completely offline.</li>
+      <li><strong>Zero Analytics or Cookies:</strong> No telemetry, tracking pixels, advertising SDKs, or third-party cookies are included.</li>
+      <li><strong>Minimal Permissions Only:</strong>
+        <ul>
+          <li><code>activeTab</code>: Grants temporary access only to the currently active tab when you click the extension icon to scan or highlight tables.</li>
+          <li><code>scripting</code>: Injects our local table-detection script on demand into the active tab only after user interaction (no persistent background content scripts).</li>
+          <li><code>storage</code>: Stores your local preferences (number cleaning, link inclusion), Multi-Page Batch table buffer, and optional offline license key strictly inside <code>chrome.storage.local</code> on your device.</li>
+        </ul>
+      </li>
+      <li><strong>Zero Broad Host Permissions:</strong> We do not request <code>&lt;all_urls&gt;</code> or any persistent <code>host_permissions</code>.</li>
+    </ul>
+
+    <hr />
+
+    <h2>中文 — 隐私政策</h2>
+    <p>
+      <strong>Table to Excel &amp; CSV Exporter（网页表格导出 Excel / CSV 工具）</strong> 坚持纯本地运行原则。所有网页表格识别、数据清洗、CSV/TSV/Markdown/JSON 转换以及 <code>.xlsx</code> Excel 文件生成均 100% 在您的浏览器本地完成。
+    </p>
+    <ul>
+      <li><strong>零数据收集：</strong>本扩展不收集、不存储、不上传、不出售或共享任何个人信息、浏览记录、网页内容或导出的表格数据。</li>
+      <li><strong>零外部网络请求：</strong>扩展内部不包含任何远程 API 请求、<code>fetch</code>、<code>XMLHttpRequest</code> 或后台数据传输，完全支持离线运行。</li>
+      <li><strong>零统计追踪与 Cookie：</strong>不包含任何第三方埋点、遥测、广告 SDK 或追踪 Cookie。</li>
+      <li><strong>最小化权限说明：</strong>
+        <ul>
+          <li><code>activeTab</code>：仅在您主动点击扩展图标时，临时访问当前正在浏览的标签页以读取表格内容。</li>
+          <li><code>scripting</code>：仅在您点击打开弹窗或刷新时，按需向当前标签页注入本地表格解析脚本（不使用常驻后台 <code>content_scripts</code>）。</li>
+          <li><code>storage</code>：仅在您设备的 <code>chrome.storage.local</code> 中本地保存导出设置（货币清洗、链接提取）、跨页批量采集缓存（Multi-Page Batch）及离线授权状态，绝不上传至任何服务器。</li>
+        </ul>
+      </li>
+      <li><strong>零全站常驻权限：</strong>本扩展不申请 <code>&lt;all_urls&gt;</code> 或任何 <code>host_permissions</code>。</li>
+    </ul>
+
+    <hr />
+    <p class="muted">
+      You can inspect all extension source code locally or delete all locally stored batch/setting data at any time by clearing extension storage or removing the extension from Chrome.
+    </p>
+  </main>
+</body>
+</html>
